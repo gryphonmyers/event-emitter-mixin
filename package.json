@@ -1,0 +1,23 @@
+{
+  "name": "event-emitter-mixin",
+  "version": "1.0.0",
+  "description": "ES6 mixin exposing an event emitter / observable interface",
+  "main": "index.js",
+  "dependencies": {
+    "mixwith": "^0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gryphonmyers/event-emitter-mixin.git"
+  },
+  "author": "Gryphon Myers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gryphonmyers/event-emitter-mixin/issues"
+  },
+  "homepage": "https://github.com/gryphonmyers/event-emitter-mixin#readme"
+}

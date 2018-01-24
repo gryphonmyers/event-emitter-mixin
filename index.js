@@ -35,14 +35,18 @@ var EventEmitterMixin = Mixin(function(superClass) {
                 return eventName.map(off, callback);
             } else {
                 if (eventName in this._callbacks) {
-                    var i = this._callbacks[eventName].indexOf(callback);
-                    if (i > -1) {
-                        this._callbacks[eventName].splice(i, 1);
+                    if (callback) {
+                        var i = this._callbacks[eventName].indexOf(callback);
+                        if (i > -1) {
+                            this._callbacks[eventName].splice(i, 1);
+                        }
+                        if (!this._callbacks[eventName].length) {
+                            delete this._callbacks[eventName];
+                        }
+                        return true;
                     }
-                    if (!this._callbacks[eventName].length) {
-                        delete this._callbacks[eventName];
-                    }
-                    return true;
+                    delete this._callbacks[eventName];
+                    return true;               
                 }
                 return false;
             }

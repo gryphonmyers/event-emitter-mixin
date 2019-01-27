@@ -1,6 +1,6 @@
 {
   "name": "@weddell/event-emitter-mixin",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "ES6 mixin exposing an event emitter interface",
   "main": "index.js",
   "dependencies": {

@@ -1,4 +1,4 @@
-var Mixin = require('mixwith').Mixin;
+var Mixin = require('@weddell/mixwith').Mixin;
 
 var EventEmitterMixin = Mixin(function(superClass) {
     return class extends superClass {

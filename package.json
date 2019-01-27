@@ -4,7 +4,7 @@
   "description": "ES6 mixin exposing an event emitter interface",
   "main": "index.js",
   "dependencies": {
-    "mixwith": "^0.1.1"
+    "@weddell/mixwith": "^0.1.5"
   },
   "devDependencies": {},
   "scripts": {

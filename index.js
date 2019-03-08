@@ -22,12 +22,10 @@ var EventEmitterMixin = Mixin(function(superClass) {
         }
 
         once(eventName, callback) {
-            var self = this;
-            var off = this.on(eventName, function() {
+            return this.on(eventName, function() {
                 callback.apply(this, arguments);
-                off();
+                this.off(eventName, callback)
             });
-            return off;
         }
 
         off(eventName, callback) {
